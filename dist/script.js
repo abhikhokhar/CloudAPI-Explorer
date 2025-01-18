@@ -24,7 +24,7 @@ const errorimage = document.getElementById("errorimage");
 
 
 async function getData(cityName){
-    const data =await fetch(`http://api.weatherapi.com/v1/current.json?key=b41407e1334f4999a7b90531251801&q=${cityName}&aqi=yes`)
+    const data =await fetch(`https://api.weatherapi.com/v1/current.json?key=b41407e1334f4999a7b90531251801&q=${cityName}&aqi=yes`)
     return await data.json();
 }
 
